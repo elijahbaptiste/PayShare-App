@@ -2,23 +2,24 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
             InitializeComponent();
+
+        } 
+        
+        private void CalendarClicked(object sender, EventArgs e)
+        {
+            CalendarButton.Text = "Successfully Clicked";
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
+        private void FeedClicked(object sender, EventArgs e) { 
+        
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void FriendsClicked(object sender, EventArgs e) { 
+        
         }
     }
 

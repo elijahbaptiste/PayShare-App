@@ -4,12 +4,29 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp2"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Title="MauiApp2">
 
     <ShellContent
-        Title="Home"
+        Title="Testing"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+    Title="Friends Page"
+    ContentTemplate="{DataTemplate local:Calendar}"
+    Route="Calendar" />
+    
+    <ShellContent
+    Title="Feed"
+    ContentTemplate="{DataTemplate local:Feed}"
+    Route="Feed" />
+    
+    <ShellContent
+    Title="Calendar"
+    ContentTemplate="{DataTemplate local:FriendsPage}"
+    Route="Friends Page" />
+
+
 
 </Shell>
